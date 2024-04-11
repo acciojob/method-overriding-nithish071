@@ -8,4 +8,18 @@ public class Main {
         // after overriden
         System.out.println(b.meth());
     }
+
+    static class B extends A {
+        @Override
+        public String meth() {
+            return "Method is overriden in Extended class B";
+        }
+
+    }
+
+    static class A {
+        public String meth() {
+            return "Invoking method from class A";
+        }
+    }
 }
