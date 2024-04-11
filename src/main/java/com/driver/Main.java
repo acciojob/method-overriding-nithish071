@@ -9,7 +9,7 @@ public class Main {
         System.out.println(b.meth());
     }
 
-    static class B extends A {
+    public static class B extends A {
         @Override
         public String meth() {
             return "Method is overriden in Extended class B";
@@ -17,7 +17,7 @@ public class Main {
 
     }
 
-    static class A {
+    public static class A {
         public String meth() {
             return "Invoking method from class A";
         }
