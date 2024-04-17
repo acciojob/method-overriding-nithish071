@@ -5,18 +5,13 @@ public class Main {
         B b = new B();
         b.meth();
         b.meth();
-        // before overriden
-//        System.out.println(b.meth());
-        // after overriden
-       
     }
 
     public static class B extends A {
         @Override
-        public String meth() {
-            return "Method is overriden in Extended class B";
+        public String meth(){
+            return "Method is overridden in Extendend class B";
         }
-
     }
 
     public static class A {
